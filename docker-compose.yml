@@ -1,0 +1,44 @@
+version: "3.9"
+
+services:
+
+  api:
+    build:
+      context: ./pulso-tecnologico/fase_4_producto/api
+      dockerfile: Dockerfile
+
+    container_name: pulso-api
+
+    restart: unless-stopped
+
+    ports:
+      - "8000:8000"
+
+    volumes:
+      - ./pulso-tecnologico/data/datos_procesados:/app/data/datos_procesados:ro
+
+    environment:
+      - PORT=8000
+
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+
+
+  frontend:
+    build:
+      context: ./pulso_tecnologico_frontend
+      dockerfile: Dockerfile
+
+    container_name: pulso-frontend
+
+    restart: unless-stopped
+
+    ports:
+      - "5173:80"
+
+    depends_on:
+      - api

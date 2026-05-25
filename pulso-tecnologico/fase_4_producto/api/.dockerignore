@@ -1,0 +1,42 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+.eggs/
+
+# Entornos virtuales
+.env
+.venv
+env/
+venv/
+
+# Datos pesados — se montan como volumen en producción
+data/*.csv
+data/*.xml
+data/*.7z
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb
+
+# Tests
+test_*.py
+*_test.py
+
+# Git
+.git/
+.gitignore
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log

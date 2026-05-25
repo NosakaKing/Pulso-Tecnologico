@@ -1,0 +1,79 @@
+# =========================
+# PYTHON / FASTAPI
+# =========================
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg-info/
+.venv/
+venv/
+env/
+
+# Logs
+*.log
+
+# Variables de entorno
+.env
+.env.*
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Pytest
+.pytest_cache/
+
+# =========================
+# NODE / VITE / REACT
+# =========================
+node_modules/
+dist/
+build/
+
+# Vite
+.vite/
+
+# =========================
+# DOCKER
+# =========================
+docker-data/
+*.tar
+
+# =========================
+# VS CODE
+# =========================
+.vscode/
+.history/
+
+# =========================
+# SISTEMA OPERATIVO
+# =========================
+.DS_Store
+Thumbs.db
+
+# =========================
+# ARCHIVOS TEMPORALES
+# =========================
+*.tmp
+*.swp
+
+# =========================
+# DATASETS PESADOS
+# =========================
+*.csv
+
+# EXCEPCIÓN:
+# Si quieres subir algunos parquet específicos,
+# elimina esta línea y usa reglas más específicas.
+
+# =========================
+# ARCHIVOS GENERADOS
+# =========================
+coverage/
+htmlcov/
+
+# =========================
+# CACHE
+# =========================
+.cache/
