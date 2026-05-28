@@ -6,6 +6,7 @@ import Survey    from "./pages/SurveyEvolution";
 import Mercado          from "./pages/MarketIntersection";
 import Clasification          from "./pages/Clasification";
 import Prediccion       from "./pages/Forecasts";
+import Dashboard from "./pages/Questions";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route path="/clasificacion" element={<Clasification />}   />
         <Route path="/mercado"       element={<Mercado />}         />
         <Route path="/prediccion"    element={<Prediccion />}      />
+        <Route path="/dashboard"    element={<Dashboard />}      />
       </Routes>
     </BrowserRouter>
   );
