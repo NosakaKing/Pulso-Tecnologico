@@ -12,6 +12,7 @@ const COLORES_CATEGORIA = {
   "framework": "#ff6b35",
   "base de datos": "#a78bfa",
   "otros": "#6bcb77",
+  "librería / entorno": "#7aa09a",
 };
 
 const CustomTooltip = ({ active, payload }) => {
@@ -111,6 +112,7 @@ export default function Top20() {
                   <option value="Framework">Framework</option>
                   <option value="Base de Datos">Base de Datos</option>
                   <option value="Otros">Otros</option>
+                  <option value="Librería / Entorno">Librería / Entorno</option>
                 </select>
               </div>
             </div>
