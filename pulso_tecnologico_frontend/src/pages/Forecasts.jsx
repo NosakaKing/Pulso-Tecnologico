@@ -269,7 +269,7 @@ export default function Prediction() {
                 textAlign: "center",
               }}>
                 <p style={{ fontSize: "11px", color: "#8892a4", marginBottom: "4px" }}>
-                  Incertidumbre prom.
+                  p.p
                 </p>
                 <p style={{ fontSize: "22px", fontWeight: "800", color: "#ffd166" }}>
                   ±{Math.round(incertidumbrePromedio / 2).toLocaleString()}
@@ -280,7 +280,7 @@ export default function Prediction() {
             {/* GRÁFICO ÁREA CON BANDA DE CONFIANZA */}
             <div className="chart-container">
               <h3 style={{ color: "#ff6b35", fontSize: "14px", marginBottom: "4px" }}>
-                Proyección de preguntas mensuales — {result.tag}
+                Proyección del market share mensual — {result.tag}
               </h3>
               <p style={{ fontSize: "12px", color: "#8892a4", marginBottom: "16px" }}>
                 Último dato histórico: <strong style={{ color: "white" }}>
